@@ -1,0 +1,6 @@
+src/
+tasks/
+dist/components/*
+/dist/themes/*
+!/dist/themes/default
+gulpfile.js
