@@ -1,17 +1,21 @@
-#menu-font {
-    font-family: 'Geo', sans-serif;
-    font-size: 2.2rem;
-    padding: 0.4rem 1rem;
+.menu-font {
+    font-family: 'Geo', sans-serif !important;
+    font-size: 2.2rem !important;
+    padding: 0.4rem 1rem !important;
 }
 
-#console-svg {
-    width: 32px;
-    height: 32px;
-    margin: 0 5px;
+.console-svg {
+    width: 32px !important;
+    height: 32px !important;
+    margin: 0 5px !important;
 }
 
 #margin-menu-bottom {
     margin-top: 43px;
+}
+
+#mobile-menu {
+    padding-top: 43px;
 }
 
 #main-header {

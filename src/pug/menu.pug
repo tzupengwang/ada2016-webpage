@@ -1,11 +1,27 @@
-.ui.fixed.blue.inverted.menu
-  .ui.container
-    a.item#menu-font 
-      img#console-svg(src="img/console.svg")
-      | ADA 2016
+.ui.grid.computer.only
+  .ui.fixed.blue.inverted.menu.computer.only
+    .ui.container
+      a.item.menu-font 
+        img.console-svg(src="img/console.svg")
+        | ADA 2016
 
-    a.item(href="#announcement") Announcement 
-    a.item(href="#info") Course Information 
-    a.item(href="#homework") Homework 
-    a.item(href="#teaching") Teaching Team 
-    a.item(href="#links") Links 
+      a.item(href="#announcement") Announcement 
+      a.item(href="#info") Course Information 
+      a.item(href="#homework") Homework 
+      a.item(href="#teaching") Teaching Team 
+      a.item(href="#links") Links 
+
+.ui.grid.mobile.only.tablet.only
+  .ui.fixed.blue.inverted.menu.computer.only
+    .ui.container
+      div.ui.simple.dropdown.item
+        i.content.icon
+        .menu
+          a.item(href="#announcement") Announcement 
+          a.item(href="#info") Course Information 
+          a.item(href="#homework") Homework 
+          a.item(href="#teaching") Teaching Team 
+          a.item(href="#links") Links 
+      a.item.menu-font 
+        img.console-svg(src="img/console.svg")
+        | ADA 2012
