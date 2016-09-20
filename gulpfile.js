@@ -78,20 +78,6 @@ gulp.task('eslint', () =>
         .pipe($.eslint.format())
 );
 
-gulp.task('js', () =>
-    browserify({entries: [CONFIG.entry.js]})
-        .transform(babelify, {
-            presets: ['es2015', 'es2016', 'es2017'],
-            plugins: ["transform-es2015-modules-commonjs", "syntax-async-functions"],
-        })
-        //.add('babel-polyfill')
-        .bundle()
-        .on('error', logError)
-        .pipe(source('main.js'))
-        .pipe(gulp.dest(CONFIG.out.js))
-        .pipe(browserSync.stream({once: true}))
-);
-
 gulp.task('watch', () => {
     gulp.watch(CONFIG.src.pug, ['pug']);
     gulp.watch(CONFIG.src.js, ['eslint', 'js']);
@@ -99,7 +85,7 @@ gulp.task('watch', () => {
 });
 
 
-gulp.task('build', ['pug', 'css', 'eslint', 'js']);
+gulp.task('build', ['pug', 'css']);
 
 gulp.task('default', ['build', 'watch', 'browser-sync']);
 
