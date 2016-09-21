@@ -3,23 +3,57 @@
   h2.ui.dividing.header
     i.info.icon
     .content Course Information
-  table.ui.celled.table
-    thead
-      th Class
-      th Instructor
-      th Time
-      th Location
-    tbody
-      tr
-        td 01
-        td Hsu-Chun Hsiao
-        td Tuesday 7,8,9 14:20 ~ 17:20
-        td R102
-      tr
-        td 02
-        td Hsin-Mu (Michael) Tsai
-        td Thursday 7,8,9 14:20 ~ 17:20
-        td R102 
-  h3.ui.dividing.header Text Book
-  | Introduction to Algorithm, 3rd Edition, Cormen, Leiserson, Rivest and Stein, the MIT Press 
+  //table.ui.celled.table
+    //thead
+      //th Class
+      //th Instructor
+      //th Time
+      //th Location
+    //tbody
+      //tr
+        //td 01
+        //td Hsu-Chun Hsiao
+        //td Tuesday 7,8,9 14:20 ~ 17:20
+        //td R102
+      //tr
+        //td 02
+        //td Hsin-Mu (Michael) Tsai
+        //td Thursday 7,8,9 14:20 ~ 17:20
+        //td R102 
+  .ui.two.column.stackable.grid
+    .column
+      .ui.items
+        .item
+          .content
+            .header
+              i.user.icon
+              | Instructor
+            .description.shift-left Hsu-Chun Hsiao
+    .column
+      .ui.items
+        .item
+          .content
+            .header 
+              i.wait.icon
+              | Time
+            .description.shift-left Thursday 7,8,9 14:20 ~ 17:20
+    .column
+      .ui.items
+        .item
+          .content
+            .header 
+              i.location.arrow.icon
+              | Classroom
+            .description.shift-left
+              a(href="http://map.ntu.edu.tw/ntu.html?layer=build&uid=AT3001#") R102
+    .column
+      .ui.items
+        .item
+          .content
+            .header 
+              i.location.book.icon
+              | Text Book
+            .description.shift-left
+              | Introduction to Algorithm, 3rd Edition, Cormen, Leiserson, Rivest and Stein, the MIT Press 
+  
 

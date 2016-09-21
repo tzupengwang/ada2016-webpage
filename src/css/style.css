@@ -1,3 +1,10 @@
+html {
+    font-size: 15px !important;
+}
+.ui.text.container {
+    max-width: 800px !important;
+}
+
 .menu-font {
     font-family: 'Geo', sans-serif !important;
     font-size: 2.2rem !important;
@@ -50,7 +57,7 @@
 .monobox {
     background-color: #DDDDDD;
     border-radius: 2px;
-    margin: 0 2px;
+    margin: 0 4px;
     padding: 1px 2px;
     font-family: monospace;
 }
@@ -58,4 +65,8 @@
 .anchor {
     position: relative;
     top: -50px;
+}
+
+.shift-left {
+    padding-left: 32px;
 }
