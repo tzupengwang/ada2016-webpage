@@ -72,7 +72,7 @@ const ESLINT_CONF = {
     }
 };
 
-gulp.task('eslint', () => 
+gulp.task('eslint', () =>
     gulp.src([CONFIG.src.js])
         .pipe($.eslint(ESLINT_CONF))
         .pipe($.eslint.format())
