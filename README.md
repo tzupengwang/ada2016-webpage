@@ -1,7 +1,13 @@
 ## Install
-```
+
+```bash
 npm install
 # select the first one (automatic) when installing semantic-ui
+```
+
+If gulp is missing
+```bash
+npm install --global gulp-cli
 ```
 
 ## Editing
