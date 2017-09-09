@@ -9,7 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "semantic-ui": "^2.2.4"
+    "semantic-ui": "^2.2.13"
   },
   "devDependencies": {
     "babelify": "^7.3.0",

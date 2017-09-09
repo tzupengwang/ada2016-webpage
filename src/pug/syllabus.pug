@@ -16,198 +16,397 @@
           span.monobox(style="word-wrap:break-word")= "<student_id>@csie.ntu.edu.tw"
         li Password:
           span.monobox= "<same as your CSIE workstation password>"
-  table.ui.compact.table
-    thead
-      th #Week
-      th Date
-      th Topic
-      th Slides
-      th Note
-    tbody
-      tr
-        td 1
-        td Sep 14
-        td Course Policy & Bonus Sign-on (No Class)
-        td
-        td
+  .ui.two.item.stackable.tabs.menu.syllabus-menu
+    .item.active(data-tab='class-a')
+      i.amazon.icon
+      b Hsu-Chun Hsiao
+    .item(data-tab='class-b')
+      i.bitcoin.icon
+      b Yun-Nung (Vivian) Chen
+  .ui.tab.active(data-tab='class-a')
+    table.ui.compact.table
+      thead
+        th #Week
+        th Date
+        th Topic
+        th Slides
+        th Note
+      tbody
+        tr
+          td 1
+          td Sep 14
+          td Course Policy & Extra Sign-on (No Class)
+          td
+          td
 
-      tr
-        td 2
-        td Sep 21
-        td Introduction
-        td
-          //
-            +alink('info', 'https://drive.google.com/a/csie.ntu.edu.tw/file/d/0BxG8PWtjue6oNTVlVXJQR09ad00/view?usp=sharing')
-            +alink('intro', 'https://drive.google.com/a/csie.ntu.edu.tw/file/d/0BxG8PWtjue6oMktQTkl6TjI0WVE/view?usp=sharing')
-        td
+        tr
+          td 2
+          td Sep 21
+          td Introduction
+          td
+            //
+              +alink('info', 'https://drive.google.com/a/csie.ntu.edu.tw/file/d/0BxG8PWtjue6oNTVlVXJQR09ad00/view?usp=sharing')
+              +alink('intro', 'https://drive.google.com/a/csie.ntu.edu.tw/file/d/0BxG8PWtjue6oMktQTkl6TjI0WVE/view?usp=sharing')
+          td
 
-      tr
-        td 3
-        td Sep 28
-        td Divide-and-Conquer
-        td
-          //
-            +alink('d&c-1', 'https://drive.google.com/a/csie.ntu.edu.tw/file/d/0BxG8PWtjue6oZHVvMmczR0c1QkU/view?usp=sharing')
-        td.warning
-          i.attention.icon
-          | HW1 out
+        tr
+          td 3
+          td Sep 28
+          td Divide-and-Conquer
+          td
+            //
+              +alink('d&c-1', 'https://drive.google.com/a/csie.ntu.edu.tw/file/d/0BxG8PWtjue6oZHVvMmczR0c1QkU/view?usp=sharing')
+          td.warning
+            i.attention.icon
+            | HW1 out
 
-      tr
-        td 4
-        td Oct 5
-        td Divide-and-Conquer
-        td
-          //
-            +alink('d&c-2', 'https://drive.google.com/a/csie.ntu.edu.tw/file/d/0BxG8PWtjue6oOW55VEJNTWtkWEE/view?usp=sharing')
-        td
+        tr
+          td 4
+          td Oct 5
+          td Divide-and-Conquer
+          td
+            //
+              +alink('d&c-2', 'https://drive.google.com/a/csie.ntu.edu.tw/file/d/0BxG8PWtjue6oOW55VEJNTWtkWEE/view?usp=sharing')
+          td
 
-      tr
-        td 5
-        td Oct 12
-        td Dynamic Programming
-        td
-          //
-            +alink('dp-1', 'https://drive.google.com/a/csie.ntu.edu.tw/file/d/0BxG8PWtjue6oU2ZLM3hmN2t0WFE/view?usp=sharing')
-        td.warning
-          i.attention.icon
-          p(style="display: inline-block;")
-            | HW2 out
+        tr
+          td 5
+          td Oct 12
+          td Dynamic Programming
+          td
+            //
+              +alink('dp-1', 'https://drive.google.com/a/csie.ntu.edu.tw/file/d/0BxG8PWtjue6oU2ZLM3hmN2t0WFE/view?usp=sharing')
+          td.warning
+            i.attention.icon
+            p(style="display: inline-block;")
+              | HW2 out
 
-      tr
-        td 6
-        td Oct 19
-        td Dynamic Programming
-        td
-          //
-            +alink('dp-2', 'https://drive.google.com/a/csie.ntu.edu.tw/file/d/0BxG8PWtjue6oRUxoTWN1TlV5M1k/view?usp=sharing')
-        td.error
-          i.attention.icon
-          p(style="display: inline-block;")
-            | HW1 due
+        tr
+          td 6
+          td Oct 19
+          td Dynamic Programming
+          td
+            //
+              +alink('dp-2', 'https://drive.google.com/a/csie.ntu.edu.tw/file/d/0BxG8PWtjue6oRUxoTWN1TlV5M1k/view?usp=sharing')
+          td.error
+            i.attention.icon
+            p(style="display: inline-block;")
+              | HW1 due
 
-      tr
-        td 7
-        td Oct 26
-        td Greedy Algorithms
-        td
-          //
-            +alink('greedy-1', 'https://drive.google.com/a/csie.ntu.edu.tw/file/d/0BxG8PWtjue6oeFNCbTRnOGdHZ0E/view?usp=sharing')
-        td
+        tr
+          td 7
+          td Oct 26
+          td Greedy Algorithms
+          td
+            //
+              +alink('greedy-1', 'https://drive.google.com/a/csie.ntu.edu.tw/file/d/0BxG8PWtjue6oeFNCbTRnOGdHZ0E/view?usp=sharing')
+          td
 
-      tr
-        td 8
-        td Nov 2
-        td Greedy Algorithms / Review
-        td
-          //
-            +alink('greedy-2', 'https://drive.google.com/a/csie.ntu.edu.tw/file/d/0BxG8PWtjue6oYVdnUmMzakEtb2s/view?usp=sharing')
-            br
-            +alink('2015 midterm', 'https://drive.google.com/a/csie.ntu.edu.tw/file/d/0BxG8PWtjue6oNHlpVDhrMmZLemc/view?usp=sharing')
-        td.error
-          i.attention.icon
-          | HW2 due
+        tr
+          td 8
+          td Nov 2
+          td Greedy Algorithms / Review
+          td
+            //
+              +alink('greedy-2', 'https://drive.google.com/a/csie.ntu.edu.tw/file/d/0BxG8PWtjue6oYVdnUmMzakEtb2s/view?usp=sharing')
+              br
+              +alink('2015 midterm', 'https://drive.google.com/a/csie.ntu.edu.tw/file/d/0BxG8PWtjue6oNHlpVDhrMmZLemc/view?usp=sharing')
+          td.error
+            i.attention.icon
+            | HW2 due
 
-      tr.active
-        td 9
-        td Nov 9
-        td Mid-term Exam
-        td
-          //
-            +alink('midterm sol', 'https://drive.google.com/a/csie.ntu.edu.tw/file/d/0BxG8PWtjue6oUDNYN3hfcEhQQ0E/view?usp=sharing')
-        td
+        tr.active
+          td 9
+          td Nov 9
+          td Mid-term Exam
+          td
+            //
+              +alink('midterm sol', 'https://drive.google.com/a/csie.ntu.edu.tw/file/d/0BxG8PWtjue6oUDNYN3hfcEhQQ0E/view?usp=sharing')
+          td
 
-      tr
-        td 10
-        td Nov 16
-        td Voting Theory or some fun topics
-        td
-          //
-            +alink('voting', 'https://drive.google.com/a/csie.ntu.edu.tw/file/d/0BxG8PWtjue6ob1hDZlBqc1c2NG8/view?usp=sharing')
-        td.warning
-          i.attention.icon
-          | HW3 out
+        tr
+          td 10
+          td Nov 16
+          td Voting Theory or some fun topics
+          td
+            //
+              +alink('voting', 'https://drive.google.com/a/csie.ntu.edu.tw/file/d/0BxG8PWtjue6ob1hDZlBqc1c2NG8/view?usp=sharing')
+          td.warning
+            i.attention.icon
+            | HW3 out
 
-      tr
-        td 11
-        td Nov 23
-        td Graph Algorithms
-        td
-          //
-            +alink('graph-1', 'https://drive.google.com/a/csie.ntu.edu.tw/file/d/0BxG8PWtjue6oUjItSHAxNjc5dHc/view?usp=sharing')
-        td
+        tr
+          td 11
+          td Nov 23
+          td Graph Algorithms
+          td
+            //
+              +alink('graph-1', 'https://drive.google.com/a/csie.ntu.edu.tw/file/d/0BxG8PWtjue6oUjItSHAxNjc5dHc/view?usp=sharing')
+          td
 
-      tr
-        td 12
-        td Nov 30
-        td Graph Algorithms
-        td
-          //
-            +alink('graph-2', 'https://drive.google.com/a/csie.ntu.edu.tw/file/d/0BxG8PWtjue6oZGR6cXNBOGh5Y2c/view?usp=sharing')
-        td
+        tr
+          td 12
+          td Nov 30
+          td Graph Algorithms
+          td
+            //
+              +alink('graph-2', 'https://drive.google.com/a/csie.ntu.edu.tw/file/d/0BxG8PWtjue6oZGR6cXNBOGh5Y2c/view?usp=sharing')
+          td
 
-      tr
-        td 13
-        td Dec 7
-        td Amortized Analysis
-        td
-          //
-            +alink('graph-3', 'https://drive.google.com/a/csie.ntu.edu.tw/file/d/0BxG8PWtjue6oZG43V1pGY05GUUk/view?usp=sharing')
-        td.error
-          i.attention.icon(style="vertical-align: top")
-          p(style="display: inline-block;")
-            | HW3 due
-            br
-            | HW4 out
+        tr
+          td 13
+          td Dec 7
+          td Amortized Analysis
+          td
+            //
+              +alink('graph-3', 'https://drive.google.com/a/csie.ntu.edu.tw/file/d/0BxG8PWtjue6oZG43V1pGY05GUUk/view?usp=sharing')
+          td.error
+            i.attention.icon(style="vertical-align: top")
+            p(style="display: inline-block;")
+              | HW3 due
+              br
+              | HW4 out
 
-      tr
-        td 14
-        td Dec 14
-        td NP Completeness
-        td
-          //
-            +alink('amortized', 'https://drive.google.com/a/csie.ntu.edu.tw/file/d/0BxG8PWtjue6oTlVtUlMycmRQLXc/view?usp=sharing')
-            br
-            +alink('npc-1', 'https://drive.google.com/a/csie.ntu.edu.tw/file/d/0BxG8PWtjue6oSHVhVENwX0xtNFU/view?usp=sharing')
-        td
+        tr
+          td 14
+          td Dec 14
+          td NP Completeness
+          td
+            //
+              +alink('amortized', 'https://drive.google.com/a/csie.ntu.edu.tw/file/d/0BxG8PWtjue6oTlVtUlMycmRQLXc/view?usp=sharing')
+              br
+              +alink('npc-1', 'https://drive.google.com/a/csie.ntu.edu.tw/file/d/0BxG8PWtjue6oSHVhVENwX0xtNFU/view?usp=sharing')
+          td
 
-      tr
-        td 15
-        td Dec 21
-        td NP Completeness
-        td
-          //
-            +alink('npc-2', 'https://drive.google.com/a/csie.ntu.edu.tw/file/d/0BxG8PWtjue6oRjFLd1REUEFFYWs/view?usp=sharing')
-        td
+        tr
+          td 15
+          td Dec 21
+          td NP Completeness
+          td
+            //
+              +alink('npc-2', 'https://drive.google.com/a/csie.ntu.edu.tw/file/d/0BxG8PWtjue6oRjFLd1REUEFFYWs/view?usp=sharing')
+          td
 
-      tr
-        td 16
-        td Dec 28
-        td Approximation Algorithms
-        td
-          //
-            +alink('approx', 'https://drive.google.com/a/csie.ntu.edu.tw/file/d/0BxG8PWtjue6oZDNFTUlvR1BURVU/view?usp=sharing')
-        td.error
-          i.attention.icon
-          | HW4 due
+        tr
+          td 16
+          td Dec 28
+          td Approximation Algorithms
+          td
+            //
+              +alink('approx', 'https://drive.google.com/a/csie.ntu.edu.tw/file/d/0BxG8PWtjue6oZDNFTUlvR1BURVU/view?usp=sharing')
+          td.error
+            i.attention.icon
+            | HW4 due
 
 
-      tr
-        td 17
-        td Jan 4
-        td Other Topics / Review
-        td
-          //
-            +alink('review', 'https://drive.google.com/a/csie.ntu.edu.tw/file/d/0BxG8PWtjue6oMnUxanR6T0gtWFE/view?usp=sharing')
-            br
-            +alink('2015 final', 'https://drive.google.com/a/csie.ntu.edu.tw/file/d/0BxG8PWtjue6oWk1OVE5kZGo3NDA/view?usp=sharing')
-        td
-	
+        tr
+          td 17
+          td Jan 4
+          td Other Topics / Review
+          td
+            //
+              +alink('review', 'https://drive.google.com/a/csie.ntu.edu.tw/file/d/0BxG8PWtjue6oMnUxanR6T0gtWFE/view?usp=sharing')
+              br
+              +alink('2015 final', 'https://drive.google.com/a/csie.ntu.edu.tw/file/d/0BxG8PWtjue6oWk1OVE5kZGo3NDA/view?usp=sharing')
+          td
 
-      tr.active
-        td 18
-        td Jan 11
-        td Final Exam
-        td
-        td
+        tr.active
+          td 18
+          td Jan 11
+          td Final Exam
+          td
+          td
+  .ui.tab(data-tab='class-b')
+    table.ui.compact.table
+      thead
+        th #Week
+        th Date
+        th Topic
+        th Slides
+        th Note
+      tbody
+        tr
+          td 1
+          td Sep 14
+          td Course Policy & Extra Sign-on (No Class)
+          td
+          td
 
+        tr
+          td 2
+          td Sep 21
+          td Introduction
+          td
+            //
+              +alink('info', 'https://drive.google.com/a/csie.ntu.edu.tw/file/d/0BxG8PWtjue6oNTVlVXJQR09ad00/view?usp=sharing')
+              +alink('intro', 'https://drive.google.com/a/csie.ntu.edu.tw/file/d/0BxG8PWtjue6oMktQTkl6TjI0WVE/view?usp=sharing')
+          td
+
+        tr
+          td 3
+          td Sep 28
+          td Divide-and-Conquer
+          td
+            //
+              +alink('d&c-1', 'https://drive.google.com/a/csie.ntu.edu.tw/file/d/0BxG8PWtjue6oZHVvMmczR0c1QkU/view?usp=sharing')
+          td.warning
+            i.attention.icon
+            | HW1 out
+
+        tr
+          td 4
+          td Oct 5
+          td Divide-and-Conquer
+          td
+            //
+              +alink('d&c-2', 'https://drive.google.com/a/csie.ntu.edu.tw/file/d/0BxG8PWtjue6oOW55VEJNTWtkWEE/view?usp=sharing')
+          td
+
+        tr
+          td 5
+          td Oct 12
+          td Dynamic Programming
+          td
+            //
+              +alink('dp-1', 'https://drive.google.com/a/csie.ntu.edu.tw/file/d/0BxG8PWtjue6oU2ZLM3hmN2t0WFE/view?usp=sharing')
+          td.warning
+            i.attention.icon
+            p(style="display: inline-block;")
+              | HW2 out
+
+        tr
+          td 6
+          td Oct 19
+          td Dynamic Programming
+          td
+            //
+              +alink('dp-2', 'https://drive.google.com/a/csie.ntu.edu.tw/file/d/0BxG8PWtjue6oRUxoTWN1TlV5M1k/view?usp=sharing')
+          td.error
+            i.attention.icon
+            p(style="display: inline-block;")
+              | HW1 due
+
+        tr
+          td 7
+          td Oct 26
+          td Greedy Algorithms
+          td
+            //
+              +alink('greedy-1', 'https://drive.google.com/a/csie.ntu.edu.tw/file/d/0BxG8PWtjue6oeFNCbTRnOGdHZ0E/view?usp=sharing')
+          td
+
+        tr
+          td 8
+          td Nov 2
+          td Greedy Algorithms / Review
+          td
+            //
+              +alink('greedy-2', 'https://drive.google.com/a/csie.ntu.edu.tw/file/d/0BxG8PWtjue6oYVdnUmMzakEtb2s/view?usp=sharing')
+              br
+              +alink('2015 midterm', 'https://drive.google.com/a/csie.ntu.edu.tw/file/d/0BxG8PWtjue6oNHlpVDhrMmZLemc/view?usp=sharing')
+          td.error
+            i.attention.icon
+            | HW2 due
+
+        tr.active
+          td 9
+          td Nov 9
+          td Mid-term Exam
+          td
+            //
+              +alink('midterm sol', 'https://drive.google.com/a/csie.ntu.edu.tw/file/d/0BxG8PWtjue6oUDNYN3hfcEhQQ0E/view?usp=sharing')
+          td
+
+        tr
+          td 10
+          td Nov 16
+          td Voting Theory or some fun topics
+          td
+            //
+              +alink('voting', 'https://drive.google.com/a/csie.ntu.edu.tw/file/d/0BxG8PWtjue6ob1hDZlBqc1c2NG8/view?usp=sharing')
+          td.warning
+            i.attention.icon
+            | HW3 out
+
+        tr
+          td 11
+          td Nov 23
+          td Graph Algorithms
+          td
+            //
+              +alink('graph-1', 'https://drive.google.com/a/csie.ntu.edu.tw/file/d/0BxG8PWtjue6oUjItSHAxNjc5dHc/view?usp=sharing')
+          td
+
+        tr
+          td 12
+          td Nov 30
+          td Graph Algorithms
+          td
+            //
+              +alink('graph-2', 'https://drive.google.com/a/csie.ntu.edu.tw/file/d/0BxG8PWtjue6oZGR6cXNBOGh5Y2c/view?usp=sharing')
+          td
+
+        tr
+          td 13
+          td Dec 7
+          td Amortized Analysis
+          td
+            //
+              +alink('graph-3', 'https://drive.google.com/a/csie.ntu.edu.tw/file/d/0BxG8PWtjue6oZG43V1pGY05GUUk/view?usp=sharing')
+          td.error
+            i.attention.icon(style="vertical-align: top")
+            p(style="display: inline-block;")
+              | HW3 due
+              br
+              | HW4 out
+
+        tr
+          td 14
+          td Dec 14
+          td NP Completeness
+          td
+            //
+              +alink('amortized', 'https://drive.google.com/a/csie.ntu.edu.tw/file/d/0BxG8PWtjue6oTlVtUlMycmRQLXc/view?usp=sharing')
+              br
+              +alink('npc-1', 'https://drive.google.com/a/csie.ntu.edu.tw/file/d/0BxG8PWtjue6oSHVhVENwX0xtNFU/view?usp=sharing')
+          td
+
+        tr
+          td 15
+          td Dec 21
+          td NP Completeness
+          td
+            //
+              +alink('npc-2', 'https://drive.google.com/a/csie.ntu.edu.tw/file/d/0BxG8PWtjue6oRjFLd1REUEFFYWs/view?usp=sharing')
+          td
+
+        tr
+          td 16
+          td Dec 28
+          td Approximation Algorithms
+          td
+            //
+              +alink('approx', 'https://drive.google.com/a/csie.ntu.edu.tw/file/d/0BxG8PWtjue6oZDNFTUlvR1BURVU/view?usp=sharing')
+          td.error
+            i.attention.icon
+            | HW4 due
+
+
+        tr
+          td 17
+          td Jan 4
+          td Other Topics / Review
+          td
+            //
+              +alink('review', 'https://drive.google.com/a/csie.ntu.edu.tw/file/d/0BxG8PWtjue6oMnUxanR6T0gtWFE/view?usp=sharing')
+              br
+              +alink('2015 final', 'https://drive.google.com/a/csie.ntu.edu.tw/file/d/0BxG8PWtjue6oWk1OVE5kZGo3NDA/view?usp=sharing')
+          td
+
+        tr.active
+          td 18
+          td Jan 11
+          td Final Exam
+          td
+          td
 
