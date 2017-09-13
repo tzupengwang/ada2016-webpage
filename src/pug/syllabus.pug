@@ -5,17 +5,18 @@
     .content Syllabus & Slides
   .ui.message.error
     .header The following syllabus is tentative and subject to change.
-  .ui.message.warning
-    .header How to access slides
-    p
-      | You #[b MUST] use your NTU CSIE Google for Education account to access slides.
-      br
-      | (If you don't have an account, please contact us to get permission with your personal email).
-      ul
-        li Username:
-          span.monobox(style="word-wrap:break-word")= "<student_id>@csie.ntu.edu.tw"
-        li Password:
-          span.monobox= "<same as your CSIE workstation password>"
+  //
+    .ui.message.warning
+      .header How to access slides
+      p
+        | You #[b MUST] use your NTU CSIE Google for Education account to access slides.
+        br
+        | (If you don't have an account, please contact us to get permission with your personal email).
+        ul
+          li Username:
+            span.monobox(style="word-wrap:break-word")= "<student_id>@csie.ntu.edu.tw"
+          li Password:
+            span.monobox= "<same as your CSIE workstation password>"
   .ui.two.item.stackable.tabs.menu.syllabus-menu
     .item.active(data-tab='class-a')
       i.amazon.icon
@@ -230,6 +231,7 @@
           td Sep 14
           td Course Policy & Extra Sign-on (No Class)
           td
+            +alink('intro', 'https://www.csie.ntu.edu.tw/~yvchen/f106-ada/doc/170914_CourseLogistics.pdf')
           td
 
         tr
@@ -237,9 +239,6 @@
           td Sep 21
           td Introduction
           td
-            //
-              +alink('info', 'https://drive.google.com/a/csie.ntu.edu.tw/file/d/0BxG8PWtjue6oNTVlVXJQR09ad00/view?usp=sharing')
-              +alink('intro', 'https://drive.google.com/a/csie.ntu.edu.tw/file/d/0BxG8PWtjue6oMktQTkl6TjI0WVE/view?usp=sharing')
           td
 
         tr
