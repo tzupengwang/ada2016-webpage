@@ -3,20 +3,9 @@
   h2.ui.dividing.header
     i.list.icon
     .content Syllabus & Slides
-  .ui.message.error
-    .header The following syllabus is tentative and subject to change.
   //
-    .ui.message.warning
-      .header How to access slides
-      p
-        | You #[b MUST] use your NTU CSIE Google for Education account to access slides.
-        br
-        | (If you don't have an account, please contact us to get permission with your personal email).
-        ul
-          li Username:
-            span.monobox(style="word-wrap:break-word")= "<student_id>@csie.ntu.edu.tw"
-          li Password:
-            span.monobox= "<same as your CSIE workstation password>"
+    .ui.message.error
+      .header The following syllabus is tentative and subject to change.
   .ui.two.item.stackable.tabs.menu.syllabus-menu
     .item.active(data-tab='class-a')
       i.amazon.icon
@@ -25,6 +14,17 @@
       i.bitcoin.icon
       b Yun-Nung (Vivian) Chen
   .ui.tab.active(data-tab='class-a')
+    .ui.message.warning
+      .header How to access slides
+      p
+        | To access the following slides, you #[b MUST] use your NTU CSIE Google for Education account.
+        br
+        | (If you don't have an account, please contact us to get permission with your personal email).
+        ul
+          li Username:
+            span.monobox(style="word-wrap:break-word")= "<student_id>@csie.ntu.edu.tw"
+          li Password:
+            span.monobox= "<same as your CSIE workstation password>"
     table.ui.compact.table
       thead
         th #Week
@@ -38,6 +38,7 @@
           td Sep 14
           td Course Policy & Extra Sign-on (No Class)
           td
+            +alink('intro', 'https://drive.google.com/a/csie.ntu.edu.tw/file/d/0BxG8PWtjue6od3VFZlVLWlFpams/view?usp=sharing')
           td
 
         tr
