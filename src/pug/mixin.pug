@@ -3,6 +3,11 @@ mixin alink(text, href)
     i.external.icon
     = text
 
+mixin pdflink(text, href)
+  a(href=href, target="_blank").alink
+    i.file.pdf.outline.icon
+    = text
+
 mixin videolink(text, href)
   a(href=href, target="_blank").alink
     i.youtube.play.icon
