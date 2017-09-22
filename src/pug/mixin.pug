@@ -2,3 +2,8 @@ mixin alink(text, href)
   a(href=href, target="_blank").alink
     i.external.icon
     = text
+
+mixin videolink(text, href)
+  a(href=href, target="_blank").alink
+    i.youtube.play.icon
+    = text
