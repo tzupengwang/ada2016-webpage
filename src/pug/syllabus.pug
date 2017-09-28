@@ -1,18 +1,19 @@
 #syllabus.anchor
 .section
-  h2.ui.dividing.header
-    i.list.icon
-    .content Syllabus & Slides
+  .ui.secondary.pointing.menu
+    h2.ui.header(style='margin-bottom: 0;')
+      i.list.icon
+      .content Syllabus & Slides
+    .right.menu.syllabus-menu
+      .item.purple.active(data-tab='class-a')
+        i.amazon.icon
+        b Hsu-Chun Hsiao
+      .item.purple(data-tab='class-b')
+        i.bitcoin.icon
+        b Yun-Nung (Vivian) Chen
   //
     .ui.message.error
       .header The following syllabus is tentative and subject to change.
-  .ui.two.item.stackable.tabs.menu.syllabus-menu
-    .item.active(data-tab='class-a')
-      i.amazon.icon
-      b Hsu-Chun Hsiao
-    .item(data-tab='class-b')
-      i.bitcoin.icon
-      b Yun-Nung (Vivian) Chen
   .ui.tab.active(data-tab='class-a')
     .ui.message.warning
       .header How to access slides
@@ -250,8 +251,7 @@
           td Sep 28
           td Divide-and-Conquer
           td
-            //
-              +pdflink('d&c-1', 'https://drive.google.com/a/csie.ntu.edu.tw/file/d/0BxG8PWtjue6oZHVvMmczR0c1QkU/view?usp=sharing')
+            +pdflink('d&c-1', 'https://www.csie.ntu.edu.tw/~yvchen/f106-ada/doc/170928_Divide-and-Conquer.pdf')
           td
 
         tr
@@ -259,8 +259,7 @@
           td Oct 5
           td Divide-and-Conquer
           td
-            //
-              +pdflink('d&c-2', 'https://drive.google.com/a/csie.ntu.edu.tw/file/d/0BxG8PWtjue6oOW55VEJNTWtkWEE/view?usp=sharing')
+            +pdflink('d&c-2', 'https://www.csie.ntu.edu.tw/~yvchen/f106-ada/doc/171005_Divide-and-Conquer2.pdf')
           td
 
         tr
