@@ -3,4 +3,13 @@ script(src="https://code.jquery.com/jquery-3.1.1.min.js"
        crossorigin="anonymous")
 script(src="semantic/dist/semantic.min.js")
 script.
-  $('.syllabus-menu .item').tab();
+  $('.syllabus-menu .item').tab({
+    onVisible: (tabPath) => {
+      // MUST be either 'class-a' or 'class-b'
+      window.localStorage.setItem('class', tabPath);
+    },
+  });
+  const clas = window.localStorage.getItem('class');
+  if (clas === 'class-a' || clas === 'class-b') {
+    $('.syllabus-menu .item').tab('change tab', clas);
+  }
